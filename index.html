@@ -18,7 +18,7 @@ body {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">TOP</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOCATIONS</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INFORMATION</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTS</a>
     <!--<div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
@@ -34,10 +34,10 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOCATIONS</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACTS</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOP</a>
 </div>
 
 <!-- Page content -->
@@ -79,9 +79,7 @@ body {font-family: "Lato", sans-serif}
     </ul>
     <p class="w3-justify">João's University: <a href="https://www.google.com/maps/search/feup/@41.1770832,-8.597272,18z/data=!3m1!4b1?hl=en">Faculdade de Engenharia (FEUP)</a></p>
    
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">Pressing the address will open a google maps page with the location</p>
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Name</p>
@@ -98,15 +96,15 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-  <!-- The Tour Section -->
+  <!-- The Contact Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+      <h2 class="w3-wide w3-center">CONTACTS</h2>
+      <p class="w3-opacity w3-center"><i>Every contact you might need</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">João <span href="tel:915544540" class="w3-tag w3-right w3-margin-left">915544540</span></li>
+        <li class="w3-padding">Pedro <span class="w3-tag w3-right w3-margin-left">Sold out</span></li>
         <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
       </ul>
 
