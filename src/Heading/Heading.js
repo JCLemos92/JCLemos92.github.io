@@ -4,19 +4,20 @@ import './Heading.css';
 function Heading() {
   return(
     <>
-      <div class="h-screen flex flex-col align-middle items-center bg-slate-200" style={{height:'100%'}}>
-      <div
-          class="self-center text-cyan-800 font-bold text-3xl align-middle pt-20">
-          1 de Julho 2023
-        </div>
+      <div class="h-screen flex flex-col align-middle items-center" style={{height:'100%'}}>
+ 
       <img 
           src='/assets/Images/Monograma_Aguarela.png' 
-          class="self-center align-middle"
+          class="self-center align-middle mt-16"
           alt="test" 
-          width="1000"></img>
+          width="700"></img>
         <div
-          class="self-center text-cyan-800 font-bold text-2xl align-middle pb-20">
-          Site em construção
+          class="self-center font-light text-5xl align-middle pb-10 text-[#6c8ea7]">
+          Mariana & João
+        </div>
+        <div
+          class="self-center text-4xl align-middle pb-10 text-[#6c8ea7] font-light">
+          1 de Julho 2023
         </div>
       </div>
     </>

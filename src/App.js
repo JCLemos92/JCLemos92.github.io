@@ -5,12 +5,16 @@ import React from 'react';
 // import UserPage from './UserPage';
 // import NavBar from './NavBar/NavBar';
 import Heading from './Heading/Heading';
+import Countdown from './Countdown/Countdown';
+import NavBar from './NavBar/NavBar';
 
 function App() {
   return (
     <>
     {/* <NavBar /> */}
+    <NavBar />
     <Heading />
+    <Countdown />
     {/* <Routes>
 
       <Route exact path="/" component={HomePage} />
