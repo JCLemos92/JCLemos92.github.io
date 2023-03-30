@@ -3,10 +3,10 @@ import './Heading.css';
 
 function Heading() {
   return(
-    <>
-      <div class="flex flex-col align-middle items-center" id = "home">
+    <div class="flex flex-col align-middle items-center bg-[url('/public/assets/proposal.gif')] h-screen bg-center	">
+      <div id = "home">
  
-      <img 
+      {/* <img 
           src='/assets/Images/Monograma_Aguarela.png' 
           class="self-center align-middle mt-16"
           alt="test" 
@@ -18,9 +18,9 @@ function Heading() {
         <div
           class="self-center text-4xl align-middle pb-10 text-[#6c8ea7] font-light">
           1 de Julho 2023
-        </div>
+        </div> */}
       </div>
-    </>
+    </div>
   )
 }
 

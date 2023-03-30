@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     {/* <NavBar /> */}
-    <NavBar />
+    <NavBar class="scroll-smoth"/>
     <Heading />
     <AboutUs />
     <Location />

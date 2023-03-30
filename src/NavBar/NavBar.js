@@ -1,12 +1,26 @@
 import React from "react";
 import './NavBar.css'
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const ToggleMode = () => {
-    setIsNavOpen(!isNavOpen);
+  const [ onTop, setonTop ] = useState(false);
+  const [burguerMoved, setBurgerMoved] = useState(false);
+
+  const listenScrollEvent = () => {
+    window.scrollY > 80
+      ? setonTop(false)
+      : setonTop(true);
+    window.scrollY > window.innerHeight
+      ? setBurgerMoved(true)
+      : setBurgerMoved(false);
   }
+  
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent)
+  })
+
   return (
     <div class="fixed w-full float-right">
       <nav class="w-full float-right">
@@ -15,9 +29,21 @@ function NavBar() {
             class="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
           >
-            <span class="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span class="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span class="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span class={
+              burguerMoved ? 
+              "block h-0.5 w-8 bg-[#6c8ea7]" :
+              "block h-0.5 w-8 bg-white"
+            }></span>
+            <span class={
+              burguerMoved ? 
+              "block h-0.5 w-8 bg-[#6c8ea7]" :
+              "block h-0.5 w-8 bg-white"
+            }></span>
+            <span class={
+              burguerMoved ? 
+              "block h-0.5 w-8 bg-[#6c8ea7]" :
+              "block h-0.5 w-8 bg-white"
+            }></span>
           </div>
 
           <div class={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
@@ -26,7 +52,7 @@ function NavBar() {
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
-                class="h-8 w-8 text-gray-600"
+                class="h-8 w-8 text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -39,28 +65,73 @@ function NavBar() {
               </svg>
             </div>
             <ul class="MENU-LINK-MOBILE-OPEN flex flex-col mt-14 ml-5 mr-5">
-              <li class="border-b border-gray-400 mt-6 uppercase w-fit mx-10">
-                <a href="#home">Início</a>
+              <li class="border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium">
+                <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}>
+                Início
+                </Link>
               </li>
-              <li class="border-b border-gray-400 my-3 mt-6 uppercase w-fit mx-10">
-                <a href="#aboutUs">About Us</a>
+              <li class="border-b border-white-400 my-3 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium	">
+                <Link
+                  to="aboutUs"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}>
+                  About Us
+                </Link>
               </li>
-              <li class="border-b border-gray-400 my-3 uppercase w-fit mx-10">
-                <a href="#location">Location</a>
+              <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium">
+                <Link
+                to="location"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}>
+                Location
+              </Link>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul class="DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 bg-white w-full shadow-sm flex-row-reverse">
-          <li>
-            <a href="#location" class="mx-10">Location</a>
+        <ul class={onTop ? 
+        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 w-full shadow-sm flex-row-reverse text-white" :
+        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 bg-white w-full shadow-sm flex-row-reverse"
+        }>
+          <li class="ml-10">
+            <Link
+              to="location"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
+              Location
+            </Link>
           </li>
-          <li>
-            <a href="#aboutUs" class="mx-10">About Us</a>
+          <li class="mx-10">
+            <Link
+              to="aboutUs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
+              About Us
+            </Link>
           </li>
-          <li>
-          <a href="#home" class="mx-10">Início</a>
+          <li class="mx-10">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
+              Início
+            </Link>
           </li>
         </ul>
       </nav>
@@ -77,6 +148,7 @@ function NavBar() {
         top: 0;
         left: 0;
         z-index: 10;
+        opacity: 70%;
       }
     `}</style>
     </div>
