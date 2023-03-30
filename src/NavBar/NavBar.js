@@ -39,7 +39,7 @@ function NavBar() {
               </svg>
             </div>
             <ul class="MENU-LINK-MOBILE-OPEN flex flex-col mt-14 ml-5 mr-5">
-              <li class="border-b border-gray-400 my-3 mt-6 uppercase w-fit mx-10">
+              <li class="border-b border-gray-400 mt-6 uppercase w-fit mx-10">
                 <a href="#home">Início</a>
               </li>
               <li class="border-b border-gray-400 my-3 mt-6 uppercase w-fit mx-10">
