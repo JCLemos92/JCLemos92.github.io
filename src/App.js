@@ -5,9 +5,10 @@ import React from 'react';
 // import UserPage from './UserPage';
 // import NavBar from './NavBar/NavBar';
 import Heading from './Heading/Heading';
-import Countdown from './Countdown/Countdown';
+// import Countdown from './Countdown/Countdown';
 import NavBar from './NavBar/NavBar';
 import AboutUs from './AboutUs/AboutUs';
+import Location from './Location/Location';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
     <NavBar />
     <Heading />
     <AboutUs />
-    <Countdown />
+    <Location />
+    {/* <Countdown /> */}
     {/* <Routes>
 
       <Route exact path="/" component={HomePage} />

@@ -6,7 +6,7 @@ function AboutUs() {
     <>
       <div id = "aboutUs">
         <div class="mt-36"></div>
-        <div class="mx-36 flex flex-col md:flex-row">
+        <div class="mx-36 flex flex-col lg:flex-row">
           <img 
             src='/assets/Images/IMG_6945.JPG' 
             class="self-center align-middle mr-10 sm:mb-10"
