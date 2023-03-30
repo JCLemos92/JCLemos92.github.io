@@ -4,7 +4,7 @@ import './Heading.css';
 function Heading() {
   return(
     <>
-      <div class="flex flex-col align-middle items-center">
+      <div class="flex flex-col align-middle items-center" id = "home">
  
       <img 
           src='/assets/Images/Monograma_Aguarela.png' 

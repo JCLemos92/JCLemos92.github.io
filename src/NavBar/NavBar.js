@@ -40,13 +40,13 @@ function NavBar() {
             </div>
             <ul class="MENU-LINK-MOBILE-OPEN flex flex-col mt-14 ml-5 mr-5">
               <li class="border-b border-gray-400 my-3 mt-6 uppercase w-fit mx-10">
-                <a href="/about">About</a>
+                <a href="#home">Início</a>
               </li>
-              <li class="border-b border-gray-400 my-3 uppercase w-fit mx-10">
-                <a href="/portfolio">Portfolio</a>
-              </li>
-              <li class="border-b border-gray-400 my-3 uppercase w-fit mx-10">
+              <li class="border-b border-gray-400 my-3 mt-6 uppercase w-fit mx-10">
                 <a href="#aboutUs">About Us</a>
+              </li>
+              <li class="border-b border-gray-400 my-3 uppercase w-fit mx-10">
+                <a href="#location">Location</a>
               </li>
             </ul>
           </div>
@@ -54,13 +54,13 @@ function NavBar() {
 
         <ul class="DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 bg-white w-full shadow-sm flex-row-reverse">
           <li>
+            <a href="#location" class="mx-10">Location</a>
+          </li>
+          <li>
             <a href="#aboutUs" class="mx-10">About Us</a>
           </li>
           <li>
-            <a href="/portfolio" class="mx-10">Portfolio</a>
-          </li>
-          <li>
-            <a href="/contact" class="mx-10">Contact</a>
+          <a href="#home" class="mx-10">Início</a>
           </li>
         </ul>
       </nav>
