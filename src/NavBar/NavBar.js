@@ -46,7 +46,7 @@ function NavBar() {
                 <a href="/portfolio">Portfolio</a>
               </li>
               <li class="border-b border-gray-400 my-3 uppercase w-fit mx-10">
-                <a href="/contact">Contact</a>
+                <a href="#aboutUs">About Us</a>
               </li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ function NavBar() {
 
         <ul class="DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 bg-white w-full shadow-sm flex-row-reverse">
           <li>
-            <a href="/about" class="mx-10">About</a>
+            <a href="#aboutUs" class="mx-10">About Us</a>
           </li>
           <li>
             <a href="/portfolio" class="mx-10">Portfolio</a>

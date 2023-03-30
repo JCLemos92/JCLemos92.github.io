@@ -7,6 +7,7 @@ import React from 'react';
 import Heading from './Heading/Heading';
 import Countdown from './Countdown/Countdown';
 import NavBar from './NavBar/NavBar';
+import AboutUs from './AboutUs/AboutUs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     {/* <NavBar /> */}
     <NavBar />
     <Heading />
+    <AboutUs />
     <Countdown />
     {/* <Routes>
 

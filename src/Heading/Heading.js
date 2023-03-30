@@ -4,7 +4,7 @@ import './Heading.css';
 function Heading() {
   return(
     <>
-      <div class="h-screen flex flex-col align-middle items-center" style={{height:'100%'}}>
+      <div class="flex flex-col align-middle items-center">
  
       <img 
           src='/assets/Images/Monograma_Aguarela.png' 
