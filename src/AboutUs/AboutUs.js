@@ -6,7 +6,18 @@ function AboutUs() {
     <>
       <div id = "aboutUs">
         <div class="mt-36"></div>
-        <div class="mx-36 flex flex-col lg:flex-row">
+        <div clas="flex justify-center">test
+          <div
+            class="font-light text-5xl self-center pb-10 text-[#6c8ea7]">
+            Mariana & João
+          </div>
+          <div
+            class="self-center text-4xl align-middle pb-10 text-[#6c8ea7] font-light">
+            1 de Julho 2023
+          </div>
+        </div>
+        
+        <div class="mx-10 sm:mx-36 flex flex-col lg:flex-row">
           <img 
             src='/assets/Images/IMG_6945.JPG' 
             class="self-center align-middle mr-10 sm:mb-10"

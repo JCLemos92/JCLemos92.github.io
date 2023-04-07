@@ -9,16 +9,17 @@ import Heading from './Heading/Heading';
 import NavBar from './NavBar/NavBar';
 import AboutUs from './AboutUs/AboutUs';
 import Location from './Location/Location';
+import GoogleForm from './GoogleForm/GoogleForm';
 
 function App() {
   return (
     <>
-    {/* <NavBar /> */}
     <NavBar class="scroll-smoth"/>
     <Heading />
     <AboutUs />
     <Location />
-    {/* <Countdown /> */}
+    <GoogleForm />
+    {/* <ContactForm /> */}
     {/* <Routes>
 
       <Route exact path="/" component={HomePage} />

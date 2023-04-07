@@ -1,7 +1,7 @@
 import React from "react";
 import './NavBar.css'
 import { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -140,7 +140,7 @@ function NavBar() {
         display: none;
       }
       .showMenuNav {
-        display: block;
+        display: block
         position: absolute;
         width: fit-content;
         background-color: #6c8ea7;
