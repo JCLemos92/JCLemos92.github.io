@@ -8,6 +8,11 @@ function GoogleForm() {
     <div id="contact">
     <div class="mt-36"></div>
       <div class="mx-44 font-light text-2xl text-[#6c8ea7] mb-10 flex justify-center">Contacto</div>
+      <div class="mx-10 sm:mx-36 flex flex-col lg:flex-row mb-10">
+        <div class="text-justify">
+        Alguma restrição ou intolerância alimentar que devamos ter conhecimento? Alguma questão que nos queiram colocar? Falem connosco!
+        </div>      
+      </div>
     <div class="sm:mx-52 flex flex-col mx-32">
       <form 
       method="POST"  action="https://docs.google.com/forms/d/1dWcvUgxCl9XbIM4jViwJAGtPqHHlF6Netp7-XpARHzw/formResponse"

@@ -6,7 +6,7 @@ function Footer() {
     <>
       <div class="w-full bg-[#6c8ea7] mt-10 text-white py-3">
         <div class="flex justify-center">
-          @ 2023 marianaejoao.pt. Made with React & tailwindcss
+          @ 2023 marianaejoao.pt
         </div>
       </div>
     </>

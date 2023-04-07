@@ -20,7 +20,7 @@ function Navigation() {
   })
 
   return (
-    <div class="fixed w-full float-right h-full top-0">
+    <div class="fixed w-full float-right top-0">
       <nav class="w-full float-right">
         <section class="MOBILE-MENU flex lg:hidden justify-between top-0 z-50 px-8 py-8 right-0 float-right">
           <div
@@ -89,11 +89,14 @@ function Navigation() {
               </a>
               </li>
               <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
-              <a
-            href="contact"
-            >
-            Contacto
-          </a>
+              <a href="confirmation" >
+                Confirmações
+              </a>
+              </li>
+              <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
+              <a href="contact" >
+                Contacto
+              </a>
           </li>
             </ul>
           </div>
@@ -110,7 +113,12 @@ function Navigation() {
             Contacto
           </a>
           </li>
-          <li class="ml-10 hover:cursor-pointer">
+          <li class="mx-10 hover:cursor-pointer">
+              <a href="confirmation" >
+                Confirmações
+            </a>
+          </li>
+          <li class="mx-10 hover:cursor-pointer">
             <a
             href="/gifts">
             Presentes
@@ -147,12 +155,11 @@ function Navigation() {
         display: block
         position: absolute;
         width: fit-content;
-        background-color: #6c8ea7;
+        background-color: rgba(108, 142, 167, 0.9);
         height: 100vh;
         top: 0;
         left: 0;
         z-index: 10;
-        opacity: 70%;
       }
     `}</style>
     </div>
