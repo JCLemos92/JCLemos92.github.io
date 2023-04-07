@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import './GoogleForm.css';
 
 
@@ -38,6 +39,40 @@ function GoogleForm() {
       </button>
     </form>
     </div>
+
+    <div class="w-full flex justify-center mt-20">
+        <img 
+            src='/assets/Images/Monograma_Aguarela.png' 
+            class="flex justify-center"
+            alt="test" 
+            width="300"></img>
+      </div>
+
+
+      <div class="flex flex-row lg:flex-row space-x-10 w-full">
+      
+        <div class="w-[50%] block">
+          <div class="mx-10 sm:mx-36 flex justify-center text-[#6c8ea7] text-xl mb-5">
+            Mariana Pissarra
+          </div>
+          <div class="mx-10 sm:mx-36 flex justify-center mb-5">
+            912299560
+          </div>
+        </div>
+        <div class="w-[50%]">
+          <div class="mx-10 sm:mx-36 flex justify-center text-[#6c8ea7] text-xl mb-5">
+            João Lemos
+          </div>
+          <div class="mx-10 sm:mx-36 flex justify-center mb-5">
+            915544540
+          </div>
+        </div>
+        </div>
+        <div class="mx-10 sm:mx-36 flex justify-center mb-10">
+            casamento@marianaejoao.pt
+          </div>
+
+        <Footer />
     </div>
   )
 }

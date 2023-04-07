@@ -1,20 +1,12 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import './Presentes.css';
 
 function Presentes() {
 
-  const copyToClipboard = (e) => {
-    this.textArea.select();
-    document.execCommand('copy');
-    // This is just personal preference.
-    // I prefer to not show the whole text area selected.
-    e.target.focus();
-    this.setState({ copySuccess: 'Copied!' });
-  };
-
   return(
     <>
-      <div id = "gifts">
+      <div id = "gifts" class="flex flex-col h-screen justify-between">
       <div class="mt-36"></div>
       <div class="mx-44 font-light text-2xl text-[#6c8ea7] mb-10 flex">Presentes</div>
       <div class="mx-10 sm:mx-36 flex flex-col lg:flex-col mb-10">
@@ -25,6 +17,7 @@ function Presentes() {
       </div>
       </div>
       
+      <Footer />
     </>
   )
 }

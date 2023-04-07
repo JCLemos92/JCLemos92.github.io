@@ -1,38 +1,31 @@
-import './App.css';
 import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
-// import HomePage from './HomePage';
-// import UserPage from './UserPage';
-// import NavBar from './NavBar/NavBar';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Heading from './Heading/Heading';
-// import Countdown from './Countdown/Countdown';
-import NavBar from './NavBar/NavBar';
-import AboutUs from './AboutUs/AboutUs';
+import AboutUs from './AboutUs/AboutUs'
 import Location from './Location/Location';
-import GoogleForm from './GoogleForm/GoogleForm';
 import Presentes from './Presentes/Presentes';
-import Footer from './Footer/Footer';
+import GoogleForm from './GoogleForm/GoogleForm';
+import Navigation from './Navigation/Navigation';
 
-function App() {
+export default function App() {
+
   return (
     <>
-    <NavBar class="scroll-smoth"/>
-    <Heading />
-    <AboutUs />
-    <Location />
-    <Presentes />
-    <GoogleForm />
-    <Footer />
-    {/* <ContactForm /> */}
-    {/* <Routes>
+    <Navigation />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Heading />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/gifts" element={<Presentes />} />
+        <Route path="/contact" element={<GoogleForm />} />
+      </Routes>
+    </BrowserRouter>
 
-      <Route exact path="/" component={HomePage} />
-
-      <Route path="/:id" component={UserPage} />
-
-    </Routes> */}
     </>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
