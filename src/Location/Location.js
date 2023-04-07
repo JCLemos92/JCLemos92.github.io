@@ -5,14 +5,6 @@ function Location() {
   return(
     <>
       <div id = "location">
-      <div
-          class="font-light text-5xl self-center pb-10 text-[#6c8ea7]">
-          Mariana & João
-        </div>
-        <div
-          class="self-center text-4xl align-middle pb-10 text-[#6c8ea7] font-light">
-          1 de Julho 2023
-        </div>
       <div class="mt-36"></div>
       <div class="mx-44 font-light text-2xl text-[#6c8ea7] mb-10">Onde</div>
       <div class="mx-10 sm:mx-36 flex flex-col lg:flex-row mb-10">

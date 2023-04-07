@@ -10,6 +10,8 @@ import NavBar from './NavBar/NavBar';
 import AboutUs from './AboutUs/AboutUs';
 import Location from './Location/Location';
 import GoogleForm from './GoogleForm/GoogleForm';
+import Presentes from './Presentes/Presentes';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
     <Heading />
     <AboutUs />
     <Location />
+    <Presentes />
     <GoogleForm />
+    <Footer />
     {/* <ContactForm /> */}
     {/* <Routes>
 
