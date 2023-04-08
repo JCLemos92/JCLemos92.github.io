@@ -13,7 +13,7 @@ function GoogleForm() {
         Alguma restrição ou intolerância alimentar que devamos ter conhecimento? Alguma questão que nos queiram colocar? Falem connosco!
         </div>      
       </div>
-    <div class="sm:mx-52 flex flex-col mx-32">
+    <div class="sm:mx-52 flex flex-col mx-16">
       <form 
       method="POST"  action="https://docs.google.com/forms/d/1dWcvUgxCl9XbIM4jViwJAGtPqHHlF6Netp7-XpARHzw/formResponse"
     >

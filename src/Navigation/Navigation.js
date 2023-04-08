@@ -17,7 +17,7 @@ function Navigation() {
       setonTop(false);
       setBurgerMoved(true)
     }
-  })
+  }, [])
 
   return (
     <div class="fixed w-full float-right top-0">
@@ -103,7 +103,7 @@ function Navigation() {
         </section>
 
         <ul class={onTop ? 
-        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-4 float-right px-20 w-full shadow-sm flex-row-reverse text-white" :
+        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-4 float-right px-20 w-full shadow-sm flex-row-reverse text-white bg-slate-500 bg-opacity-30 font-semibold	" :
         "DESKTOP-MENU hidden lg:flex top-0 z-50 py-4 float-right px-20 bg-[#6c8ea7] w-full shadow-sm flex-row-reverse text-white"
         }>
         <li class="mx-10 hover:cursor-pointer">

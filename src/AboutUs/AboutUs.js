@@ -11,10 +11,10 @@ function AboutUs() {
             class="font-light text-5xl self-center pb-10 text-[#6c8ea7] flex justify-center mt-36">
             Mariana & João
           </div>
-          <div
+          {/* <div
             class="self-center text-4xl align-middle pb-10 text-[#6c8ea7] font-light flex justify-center mb-10">
             1 de Julho 2023
-          </div>
+          </div> */}
         </div>   
 
         <div class="mx-10 sm:mx-36 flex flex-col lg:flex-row">
@@ -31,6 +31,14 @@ function AboutUs() {
         <p></p>
         <p>Casar e construir uma família foi sempre o nosso maior desejo, inspirados pelas nossas famílias e excelentes exemplos de valores familiares, que nos deixam tão vaidosos. Este dia representa para nós o início da nossa família e não podíamos estar mais contentes por partilhar este momento convosco. Vamos a isto!</p>
         </div>
+        </div>
+
+        <div class="flex justify-center mx-19 sm:mx-36 mt-10">
+        <img 
+          src='/assets/Images/montagem.png' 
+          class="self-center align-middle"
+          alt="test" 
+          ></img>
         </div>
 
         <Footer />
