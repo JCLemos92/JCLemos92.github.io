@@ -11,34 +11,16 @@ function Presentes() {
       <div class="sm:mx-44 mx-20 font-light text-2xl text-[#6c8ea7] mb-10 flex">Presentes</div>
         <div class="mx-10 sm:mx-36 flex flex-col lg:flex-col mb-10">
           <div className="justify-text">
-            <div id="quadra1" className="mb-4">
-              <p>As armas e os barões assinalados,</p>
-              <p>Que da ocidental praia Lusitana,</p>
-              <p>Por mares nunca de antes navegados,</p>
-              <p>Passaram ainda além da Taprobana,</p>
-              <p>Em perigos e guerras esforçados,</p>
-              <p>Mais do que prometia a força humana,</p>
-              <p>E entre gente remota edificaram</p>
-              <p>Novo Reino, que tanto sublimaram;</p>
-            </div>
-            <div id="quadra2" className="mb-4">
-              <p>As armas e os barões assinalados,</p>
-              <p>Que da ocidental praia Lusitana,</p>
-              <p>Por mares nunca de antes navegados,</p>
-              <p>Passaram ainda além da Taprobana,</p>
-              <p>Em perigos e guerras esforçados,</p>
-              <p>Mais do que prometia a força humana,</p>
-              <p>E entre gente remota edificaram</p>
-              <p>Novo Reino, que tanto sublimaram;</p>
-            </div>
-          </div>
-          <div class="flex justify-center text-[#6c8ea7] text-xl my-10">PT50003503900005547280037</div>
-      </div>
-        
+          <p>Apesar de ser um lugar-comum, a vossa presença é mesmo o melhor presente que nos podem oferecer!</p>
+          <p className="mb-4">Várias pessoas nos têm perguntado se temos alguma lista de casamento, mas a verdade é que não: temos a (enorme!) sorte de estar a morar numa casa onde já temos tudo aquilo que precisamos.</p>
+          <p>Neste momento o nosso principal desejo é começarmos a nossa família, por isso se nos quiserem dar uma ajuda, deixamos aqui o nosso IBAN 🙂</p>
+          Muito obrigada!
+          <div class="flex justify-center text-[#6c8ea7] text-xl my-10">PT50003503900005547280037</div>        
         </div>
-        <Footer />
       </div>
-      
+      </div>
+      <Footer />
+      </div>
     </>
   )
 }

@@ -29,7 +29,8 @@ function AboutUs() {
         <p>Em Fevereiro do ano passado, durante uma viagem a Liverpool (paragem imprescindível para uma fã dos Beatles como a Mariana) o João encheu-se de coragem, ajoelhou-se e o inevitável aconteceu: ficámos noivos!</p>
         <p class="mb-4">Em Maio do mesmo ano juntamos as escovas de dentes e fomos morar juntos, na mesma casa onde começamos a namorar em Julho de 2013.</p>
         <p></p>
-        <p>Casar e construir uma família foi sempre o nosso maior desejo, inspirados pelas nossas famílias e excelentes exemplos de valores familiares, que nos deixam tão vaidosos. Este dia representa para nós o início da nossa família e não podíamos estar mais contentes por partilhar este momento convosco. Vamos a isto!</p>
+        <p>Casar e construir uma família foi sempre o nosso maior desejo, inspirados pelos excelentes exemplos dos que nos rodeiam, que nos deixam tão vaidosos. Este dia representa para nós o início da nossa família e não podíamos estar mais contentes por partilhar este momento convosco.</p>
+        <p>Vamos a isto!</p>
         </div>
         </div>
 
