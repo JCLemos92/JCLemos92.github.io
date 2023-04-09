@@ -6,7 +6,7 @@ function Confirmation() {
 
   return(
     <>
-      <div id = "gifts" class="flex flex-col justify-between h-full">
+      <div id = "confirmation" class="flex flex-col justify-between">
       <div id="giftText" class="mt-36">
       <div class="sm:mx-44 mx-20 font-light text-2xl text-[#6c8ea7] mb-10 flex">Confirmações</div>
         <div class="mx-10 sm:mx-36 flex flex-col lg:flex-col mb-10">
@@ -17,7 +17,6 @@ function Confirmation() {
       </div>
         
         </div>
-        <Footer />
       </div>
       
     </>

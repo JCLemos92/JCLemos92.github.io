@@ -65,36 +65,36 @@ function Navigation() {
             <ul class="MENU-LINK-MOBILE-OPEN flex flex-col mt-14 ml-5 mr-5 h-full">
               <li class="border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer	">
                 <a
-                href="/">
+                href={`/`}
+                >
                 Início
                 </a>
               </li>
               <li class="border-b border-white-400 my-3 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium	hover:cursor-pointer">
-                <a
-                  href="/aboutUs">
+                <a href={`/aboutUs`}
+                  >
                   Sobre Nós
                 </a>
               </li>
               <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
-                <a
-                href="/location">
+                <a href={`/location`}
+                >
                 Onde
               </a>
               </li>
               <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
-                <a
-                href="/gifts"
+                <a href={`/gifts`}
                 >
                 Presentes
               </a>
               </li>
               <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
-              <a href="confirmation" >
+              <a href={`/confirmation`}>
                 Confirmações
               </a>
               </li>
               <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
-              <a href="contact" >
+              <a href={`/contact`} >
                 Contacto
               </a>
           </li>
@@ -108,39 +108,36 @@ function Navigation() {
         }>
         <li class="mx-10 hover:cursor-pointer">
             <a
-            href="contact"
+            href={`/contact`}
             >
             Contacto
           </a>
           </li>
           <li class="mx-10 hover:cursor-pointer">
-              <a href="confirmation" >
+              <a href={`/confirmation`} >
                 Confirmações
             </a>
           </li>
           <li class="mx-10 hover:cursor-pointer">
-            <a
-            href="/gifts">
+            <a href={`/gifts`}
+            >
             Presentes
           </a>
           </li>
           <li class="mx-10 hover:cursor-pointer">
-            <a
-              href="/location"
+            <a href={`/location`}
               >
               Onde
             </a>
           </li>
           <li class="mx-10 hover:cursor-pointer">
-            <a
-              href="/aboutUs"
+            <a href={`/aboutUs`}
               >
               Sobre Nós
             </a>
           </li>
           <li class="mx-10 hover:cursor-pointer">
-            <a
-              href="/"
+            <a href={`/`}
               >
               Início
             </a>

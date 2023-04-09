@@ -5,7 +5,7 @@ import './Location.css';
 function Location() {
   return(
     <>
-      <div class="flex flex-col h-screen justify-between">
+      <div class="flex flex-col justify-between">
       <div id = "location">
       <div class="mt-36"></div>
       <div class="sm:mx-44 mx-20 font-light text-2xl text-[#6c8ea7] mb-10">Onde</div>
@@ -30,7 +30,6 @@ function Location() {
       <div class="mx-10 sm:mx-36"><iframe title="test" class="w-full" height="300" src="https://maps.google.com/maps?width=800&amp;height=440&amp;hl=en&amp;q=Mosteiro%20do%20Bustelo+(Mosteiro%20do%20Bustelo)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>
       </div>
-      <Footer />
       </div>
     </>
   )

@@ -3,10 +3,31 @@ import './NavBar.css'
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-function NavBar() {
+function NavBar(props) {
+  const HOME_PAGE = 'Home';
+  const ABOUT_PAGE = 'AboutUs';
+  const LOCATION_PAGE = 'Location';
+  const GIFTS_PAGE = 'Gifts';
+  const CONFIRMATIONS_PAGE = 'Confirmations';
+  const CONTACT_PAGE = 'Contact';
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [ onTop, setonTop ] = useState(false);
   const [burguerMoved, setBurgerMoved] = useState(false);
+  const [selectedPage, setSelectedPage] = useState(HOME_PAGE);
+  let event = new Event('Home');
+
+  const handleNewPageSelection = (page) => {
+    setSelectedPage(page);
+    props.handleDisplayPage(page);
+    if(page === HOME_PAGE) {
+      setonTop(true); 
+      setBurgerMoved(false);
+    
+    } else {
+      setonTop(false); 
+      setBurgerMoved(true)
+    }
+  }
 
   const listenScrollEvent = () => {
     window.scrollY > 80
@@ -65,111 +86,182 @@ function NavBar() {
               </svg>
             </div>
             <ul class="MENU-LINK-MOBILE-OPEN flex flex-col mt-14 ml-5 mr-5 h-full">
-              <li class="border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer	">
+              <li 
+              class={selectedPage === HOME_PAGE ? 
+              "border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer" :
+              "border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer"
+              }>
                 <Link
                 to="home"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}>
+                duration={500}
+                onClick={() => {handleNewPageSelection(HOME_PAGE);}}>
                 Início
                 </Link>
               </li>
-              <li class="border-b border-white-400 my-3 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium	hover:cursor-pointer">
+              <li 
+              class={selectedPage === ABOUT_PAGE ? 
+              "border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer" :
+              "border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer"}
+              >
                 <Link
                   to="aboutUs"
                   spy={true}
                   smooth={true}
                   offset={-70}
-                  duration={500}>
+                  duration={500}
+                  onClick={() => handleNewPageSelection(ABOUT_PAGE)}>
                   Sobre Nós
                 </Link>
               </li>
-              <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
+              <li 
+              class={selectedPage === LOCATION_PAGE ? 
+              "border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer" :
+              "border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer"}
+              >
                 <Link
                 to="location"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}>
+                duration={500}
+                onClick={() => handleNewPageSelection(LOCATION_PAGE)}>
                 Onde
               </Link>
               </li>
-              <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
+              <li 
+              class={selectedPage === GIFTS_PAGE ? 
+              "border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer" :
+              "border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer"}>
                 <Link
                 to="gifts"
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}>
+                duration={500}
+                onClick={() => handleNewPageSelection(GIFTS_PAGE)}>
                 Presentes
               </Link>
               </li>
-              <li class="border-b border-white-400 my-3 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer">
+              <li
+              class={selectedPage === CONFIRMATIONS_PAGE ? 
+              "border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer" :
+              "border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer"}>
+                <Link
+                to="confirmation"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={() => handleNewPageSelection(CONFIRMATIONS_PAGE)}>
+                Confirmações
+              </Link>
+              </li>
+              <li 
+              class={selectedPage === CONTACT_PAGE ? 
+              "border-b border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer" :
+              "border-white-400 mt-6 uppercase w-fit mx-10 text-white text-lg font-medium hover:cursor-pointer"}>
               <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}>
-            Contacto
-          </Link>
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={() => handleNewPageSelection(CONTACT_PAGE)}>
+              Contacto
+            </Link>
           </li>
             </ul>
           </div>
         </section>
 
         <ul class={onTop ? 
-        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 w-full shadow-sm flex-row-reverse text-white" :
-        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-8 float-right px-20 bg-white w-full shadow-sm flex-row-reverse"
+        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-4 float-right px-20 w-full shadow-sm flex-row-reverse text-white bg-slate-500 bg-opacity-30 	" :
+        "DESKTOP-MENU hidden lg:flex top-0 z-50 py-4 float-right px-20 bg-[#6c8ea7] w-full shadow-sm flex-row-reverse text-white"
         }>
-        <li class="mx-10 hover:cursor-pointer">
+        <li 
+        class={selectedPage === CONTACT_PAGE ? 
+              "border-b border-white-400 mx-10 hover:cursor-pointer" :
+              "mx-10 hover:cursor-pointer"}
+        >
             <Link
             to="contact"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>
+            duration={500}
+            onClick={() => handleNewPageSelection(CONTACT_PAGE)}>
             Contacto
           </Link>
           </li>
-          <li class="ml-10 hover:cursor-pointer">
+          <li
+          class={selectedPage === CONFIRMATIONS_PAGE ? 
+              "border-b border-white-400 mx-10 hover:cursor-pointer" :
+              "mx-10 hover:cursor-pointer"} 
+          >
+            <Link
+            to="confirmation"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={() => handleNewPageSelection(CONFIRMATIONS_PAGE)}>
+            Confirmações
+          </Link>
+          </li>
+          <li 
+          class={selectedPage === GIFTS_PAGE ? 
+              "border-b border-white-400 mx-10 hover:cursor-pointer" :
+              "mx-10 hover:cursor-pointer"}
+              >
             <Link
             to="gifts"
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>
+            duration={500}
+            onClick={() => handleNewPageSelection(GIFTS_PAGE)}>
             Presentes
           </Link>
           </li>
-          <li class="mx-10 hover:cursor-pointer">
+          <li class={selectedPage === LOCATION_PAGE ? 
+              "border-b border-white-400 mx-10 hover:cursor-pointer" :
+              "mx-10 hover:cursor-pointer"}>
             <Link
               to="location"
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}>
+              duration={500}
+              onClick={() => handleNewPageSelection(LOCATION_PAGE)}>
               Onde
             </Link>
           </li>
-          <li class="mx-10 hover:cursor-pointer">
+          <li class={selectedPage === ABOUT_PAGE ? 
+              "border-b border-white-400 mx-10 hover:cursor-pointer" :
+              "mx-10 hover:cursor-pointer"}>
             <Link
               to="aboutUs"
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}>
+              duration={500}
+              onClick={() => handleNewPageSelection(ABOUT_PAGE)}>
               Sobre Nós
             </Link>
           </li>
-          <li class="mx-10 hover:cursor-pointer">
+          <li cclass={selectedPage === HOME_PAGE ? 
+              "border-b border-white-400 mx-10 hover:cursor-pointer" :
+              "mx-10 hover:cursor-pointer"}>
             <Link
               to="home"
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}>
+              duration={500}
+              onClick={() => handleNewPageSelection(HOME_PAGE)}>
               Início
             </Link>
           </li>
@@ -183,7 +275,7 @@ function NavBar() {
         display: block
         position: absolute;
         width: fit-content;
-        background-color: #6c8ea7;
+        background-color: rgba(108, 142, 167, 0.9);
         height: 100vh;
         top: 0;
         left: 0;
