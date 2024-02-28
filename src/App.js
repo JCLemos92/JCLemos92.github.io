@@ -22,7 +22,6 @@ export default function App(props) {
 
   const handleNewPageSelection = (page) => {
     setSelectedPage(page);
-    console.log(selectedPage)
   }
 
 

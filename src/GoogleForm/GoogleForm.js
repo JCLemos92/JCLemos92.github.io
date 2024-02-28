@@ -5,8 +5,8 @@ import './GoogleForm.css';
 
 function GoogleForm() {
   return(
-    <div id="contact">
-    <div class="mt-36"></div>
+    <div id="contact" class="h-full">
+    <div class="pt-36"></div>
       <div class="mx-44 font-light text-2xl text-[#6c8ea7] mb-10 flex justify-center">Contacto</div>
       <div class="mx-10 sm:mx-36 flex flex-col lg:flex-row mb-10">
         <div class="text-justify">

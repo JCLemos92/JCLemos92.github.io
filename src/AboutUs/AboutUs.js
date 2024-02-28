@@ -5,7 +5,7 @@ import './AboutUs.css'
 function AboutUs() {
   return(
     <>
-      <div id = "aboutUs" class=" flex flex-col justify-between">
+      <div id = "aboutUs" class=" flex flex-col justify-between h-full">
         <div clas="flex justify-center">
           <div
             class="font-light text-5xl self-center pb-10 text-[#6c8ea7] flex justify-center mt-36">
@@ -41,6 +41,7 @@ function AboutUs() {
           alt="test" 
           ></img>
         </div>
+        <Footer />
       </div>
     </>
   )

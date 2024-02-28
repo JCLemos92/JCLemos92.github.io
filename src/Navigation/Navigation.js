@@ -10,7 +10,6 @@ function Navigation() {
   
   useEffect(() => {
     if(window.location.pathname === LANDING) {
-      console.log("aqui")
       setonTop(true);
       setBurgerMoved(false)
     } else {

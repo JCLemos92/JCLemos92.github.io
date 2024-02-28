@@ -1,6 +1,6 @@
 import React from "react";
 import './NavBar.css'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 
 function NavBar(props) {
@@ -11,10 +11,9 @@ function NavBar(props) {
   const CONFIRMATIONS_PAGE = 'Confirmations';
   const CONTACT_PAGE = 'Contact';
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [ onTop, setonTop ] = useState(false);
+  const [ onTop, setonTop ] = useState(true);
   const [burguerMoved, setBurgerMoved] = useState(false);
   const [selectedPage, setSelectedPage] = useState(HOME_PAGE);
-  let event = new Event('Home');
 
   const handleNewPageSelection = (page) => {
     setSelectedPage(page);
@@ -29,18 +28,18 @@ function NavBar(props) {
     }
   }
 
-  const listenScrollEvent = () => {
-    window.scrollY > 80
-      ? setonTop(false)
-      : setonTop(true);
-    window.scrollY > window.innerHeight
-      ? setBurgerMoved(true)
-      : setBurgerMoved(false);
-  }
+  // const listenScrollEvent = () => {
+  //   window.scrollY > 80
+  //     ? setonTop(false)
+  //     : setonTop(true);
+  //   window.scrollY > window.innerHeight
+  //     ? setBurgerMoved(true)
+  //     : setBurgerMoved(false);
+  // }
   
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent)
-  })
+  // useEffect(() => {
+  //   window.addEventListener("scroll", listenScrollEvent)
+  // })
 
   return (
     <div class="fixed w-full float-right">
@@ -252,7 +251,7 @@ function NavBar(props) {
               Sobre Nós
             </Link>
           </li>
-          <li cclass={selectedPage === HOME_PAGE ? 
+          <li class={selectedPage === HOME_PAGE ? 
               "border-b border-white-400 mx-10 hover:cursor-pointer" :
               "mx-10 hover:cursor-pointer"}>
             <Link
@@ -275,12 +274,12 @@ function NavBar(props) {
         display: block
         position: absolute;
         width: fit-content;
-        background-color: rgba(108, 142, 167, 0.9);
+        background-color: rgba(108, 142, 167);
         height: 100vh;
         top: 0;
         left: 0;
         z-index: 10;
-        opacity: 70%;
+        opacity: 90%;
       }
     `}</style>
     </div>
